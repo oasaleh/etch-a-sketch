@@ -1,0 +1,15 @@
+:root {
+    --grows: 1;
+    --gcols: 1;
+}
+#grid-container {
+    display: grid;
+    gap: 2px;
+    grid-template-rows: repeat(var(--grows), 1fr);
+    grid-template-columns: repeat(var(--gcols), 1fr);
+}
+.grid-cell {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+}

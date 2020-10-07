@@ -1,0 +1,1 @@
+This is Etch-a-Sketch app.
