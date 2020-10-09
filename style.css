@@ -1,15 +1,29 @@
 :root {
     --grows: 1;
     --gcols: 1;
+    --gcolor: black;
 }
 #grid-container {
     display: grid;
-    gap: 2px;
+    margin: auto;
+    width: 1000px;
+    height: 500px;
     grid-template-rows: repeat(var(--grows), 1fr);
     grid-template-columns: repeat(var(--gcols), 1fr);
+    border: 2px solid #B3001B;
+
 }
 .grid-cell {
-    padding: 1em;
-    border: 1px solid #ddd;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border-style: hidden;
+    border: 0.2px solid #ddd;
+    border-right: transparent;
+    border-bottom: transparent;
+    
+} 
+.hovered {
+    background-color: var(--gcolor);
 }
