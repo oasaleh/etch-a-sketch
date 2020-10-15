@@ -72,6 +72,7 @@ function randomizeColor () {
     var colors = '#';
     for (var i = 0; i < 6; i++) {
       colors += letters[Math.floor(Math.random() * 16)];
+      document.getElementById("myColor").value = colors;
     }
     return colors;
 }
