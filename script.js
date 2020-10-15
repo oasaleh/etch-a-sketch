@@ -2,7 +2,7 @@ let isRandomColor = false;
 let isColorPicker = true;
 
 (function initialize () {
-    makeGrid(2, 4);
+    makeGrid(50, 100);
 }) ();
 
 // Sets the rows and columns of 'grid-container'.
