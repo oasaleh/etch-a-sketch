@@ -1,8 +1,6 @@
 :root {
-    
-    --grows: 1;
-    --gcols: 1;
-
+    --grows: 0;
+    --gcols: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 html {
@@ -11,7 +9,6 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 .title {
@@ -20,7 +17,7 @@ body {
     font-weight: 800;
     width: 50rem;
     text-align: center;
-    margin: 0.25rem auto;
+    margin: 0.25rem auto 0.4em auto;
 }
 #grid-container {
     display: grid;
@@ -39,6 +36,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;    
+    border: 0.0001px solid rgb(233, 232, 232);
 } 
 .hovered {
     border: 0.1px solid rgb(233, 232, 232);
@@ -48,15 +46,10 @@ body {
     display: flex;
     width: 70%;
     justify-content: space-evenly;
-    margin-top:2rem;
+    margin-top:2.5rem;
     margin-bottom: 1rem;
 }
 #clearButton {
     width: 50px;
-    /* margin-left: 10px; */
     text-align: center;
-}
-#colorpicker {
-    text-align: center;
-    /* margin-right: 2%; */
 }
