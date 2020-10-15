@@ -15,13 +15,13 @@ makeGrid(50, 100);
 // Creates 'cells' as an array of all elements with class name of 'grid-cell'.
 // Adds EventListeners upon hovering on each cell of array 'cells'.
 // Calls function changeColor to set background-color property of each cell to 'color'.
-let cells = document.getElementsByClassName('grid-cell');
+const cells = document.getElementsByClassName('grid-cell');
 for (let cell of cells) {
-    cell.addEventListener('mouseover', changeColor)
-    function changeColor(color) {
-        color = document.getElementById("myColor").value;
-        cell.style.setProperty('background-color', color)
-    }
+    cell.addEventListener('mouseover', changeColor);
+}
+function changeColor(color) {
+    color = document.getElementById("myColor").value;
+    this.style.setProperty('background-color', color);
 }
 
 // Adds EventListener to 'clearButton'.
