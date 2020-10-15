@@ -34,22 +34,22 @@ function clearGrid () {
     }
 }
 
-// Prompt the user to input the grid size.
-document.getElementById('gridSize').addEventListener('click', specifyGrid)
-function specifyGrid (rows) {
-    clearGrid()
-    var gridCells = document.getElementsByName('div')
-    container.parentNode.removeChild(gridCells)
-    // let hovers = document.getElementsByName('div')
-    // for (let hover of hovers) {
-        hover.parentNode.remove()
-        // cell.style.setProperty('border','none')
-        // cell.style.setProperty('border','0.0001px solid rgb(233, 232, 232)')
-     // }
-    var userInput = prompt('Select the vertical grid size - Must be lower than 100 blocks')
-    if (userInput <= 100 && userInput > 0) {
-        makeGrid(userInput, (2*userInput))
-    } else {
-        alert('The number of blocks you entered is not correct!')
-    }
-}
+// // Prompt the user to input the grid size.
+// document.getElementById('gridSize').addEventListener('click', specifyGrid)
+// function specifyGrid (rows) {
+//     clearGrid()
+//     var gridCells = document.getElementsByName('div')
+//     container.parentNode.removeChild(gridCells)
+//     // let hovers = document.getElementsByName('div')
+//     // for (let hover of hovers) {
+//         hover.parentNode.remove()
+//         // cell.style.setProperty('border','none')
+//         // cell.style.setProperty('border','0.0001px solid rgb(233, 232, 232)')
+//      // }
+//     var userInput = prompt('Select the vertical grid size - Must be lower than 100 blocks')
+//     if (userInput <= 100 && userInput > 0) {
+//         makeGrid(userInput, (2*userInput))
+//     } else {
+//         alert('The number of blocks you entered is not correct!')
+//     }
+// }
