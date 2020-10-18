@@ -2,7 +2,7 @@ let isRandomColor = false;
 let isColorPicker = true;
 
 (function initialize () {
-    makeGrid(50, 100);
+    makeGrid(20, 40);
 }) ();
 
 // Sets the rows and columns of 'grid-container'.
@@ -42,7 +42,7 @@ document.getElementById('clearButton').addEventListener('click', clearGrid)
 function clearGrid () {
     let hoveredCells = document.getElementsByClassName('grid-cell');
     for (let hoveredCell of hoveredCells) {
-        hoveredCell.style.setProperty("background-color", 'Transparent')
+        hoveredCell.style.setProperty("background-color", 'Snow')
     }
 }
 // Prompt the user to input the grid size.
@@ -72,8 +72,9 @@ function randomizeColor () {
     var colors = '#';
     for (var i = 0; i < 6; i++) {
       colors += letters[Math.floor(Math.random() * 16)];
-      document.getElementById("myColor").value = colors;
+      
     }
+    document.getElementById("myColor").value = colors;
     return colors;
 }
 
